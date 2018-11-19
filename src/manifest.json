@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Hide mouse pointer",
+  "version": "1.0.0",
+  "description": "Hides the mouse pointer/cursor after scrolling.",
+  "author": "Kenneth Sundqvist <eviloatmeal@gmail.com> (eviloatmeal.se)",
+  "homepage_url": "https://github.com/KennethSundqvist/hide-mouse-pointer-browser-extension",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ]
+}

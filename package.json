@@ -1,0 +1,35 @@
+{
+  "name": "hide-mouse-pointer-browser-extension",
+  "version": "1.0.0",
+  "description": "Hides the mouse pointer/cursor after scrolling.",
+  "author": "Kenneth Sundqvist <eviloatmeal@gmail.com> (eviloatmeal.se)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KennethSundqvist/hide-mouse-pointer-browser-extension.git"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "prettier -l \"**/*.{js,json,yml,yaml,md}\" && eslint . && web-ext lint",
+    "lint:fix": "prettier --write \"**/*.{js,json,yml,yaml,md}\" && eslint . --fix && web-ext lint",
+    "test": "npm run lint",
+    "build": "web-ext build",
+    "start": "web-ext run",
+    "release": "standard-version -a"
+  },
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.8.0",
+    "eslint-config-prettier": "3.3.0",
+    "prettier": "1.14.3",
+    "standard-version": "4.4.0",
+    "web-ext": "2.9.2"
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "node scripts/update-version-in-manifest.js && git add src/manifest.json"
+    }
+  }
+}
