@@ -6,6 +6,7 @@ Hides the mouse pointer/cursor after scrolling.
 
 The pointer is shown again after moving the mouse.
 
+![](media/hide-after-scroll.gif)
 
 ## Permissions required
 
