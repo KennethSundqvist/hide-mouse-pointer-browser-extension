@@ -21,7 +21,10 @@
 
   const scrollEl = document.scrollingElement;
   const hideEvents = ["scroll", "wheel"];
-  const showEvents = ["mousedown", "mousemove"];
+  const showEvents =
+    "PointerEvent" in window
+      ? ["pointerdown", "pointermove"]
+      : ["mousedown", "mousemove", "touchstart", "touchmove"];
   const options = {capture: true, passive: true};
 
   for (const event of hideEvents) {
