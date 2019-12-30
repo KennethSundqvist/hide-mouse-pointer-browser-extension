@@ -5,6 +5,11 @@
   "description": "Hides the mouse pointer/cursor after scrolling.",
   "author": "Kenneth Sundqvist <kenneth@kesu.se> (kesu.se)",
   "homepage_url": "https://github.com/KennethSundqvist/hide-mouse-pointer-browser-extension",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
