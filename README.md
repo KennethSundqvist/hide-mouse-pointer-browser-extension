@@ -1,5 +1,7 @@
 # Hide Mouse Pointer browser extension
 
+**[Get Chrome extension](https://chrome.google.com/webstore/detail/hide-mouse-pointer/lbbedlldjinglbnfghakndfbagkolfdf)**
+
 **[Get Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/hide-mouse-pointer/)**
 
 Hides the mouse pointer/cursor after scrolling.
