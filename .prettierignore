@@ -1,2 +1,5 @@
 dist/
 CHANGELOG.md
+# The manifest will be formatted by standard-version when running the release
+# script and will be incompatible with Prettier so just skip it.
+src/manifest.json
