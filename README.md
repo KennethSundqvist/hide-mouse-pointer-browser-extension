@@ -4,6 +4,8 @@
 
 **[Get Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/hide-mouse-pointer/)**
 
+**[Get Microsoft Edge extension](https://microsoftedge.microsoft.com/addons/detail/bhfcmabeoklabglnpgdjnefgmjojaihg)**
+
 Hides the mouse pointer/cursor after scrolling.
 
 The pointer is shown again after moving the mouse.
