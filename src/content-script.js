@@ -1,4 +1,4 @@
-(function() {
+(function () {
   let hidden = false;
 
   const styleEl = document.createElement("style");
