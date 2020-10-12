@@ -1,14 +1,16 @@
 # Hide Mouse Pointer browser extension
 
-**[Get Chrome extension](https://chrome.google.com/webstore/detail/hide-mouse-pointer/lbbedlldjinglbnfghakndfbagkolfdf)**
+## Get the extension
 
-**[Get Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/hide-mouse-pointer/)**
+- **[Chrome](https://chrome.google.com/webstore/detail/hide-mouse-pointer/lbbedlldjinglbnfghakndfbagkolfdf)**
+- **[Firefox](https://addons.mozilla.org/en-US/firefox/addon/hide-mouse-pointer/)**
+- **[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/bhfcmabeoklabglnpgdjnefgmjojaihg)**
 
-**[Get Microsoft Edge extension](https://microsoftedge.microsoft.com/addons/detail/bhfcmabeoklabglnpgdjnefgmjojaihg)**
+## How to use
 
-Hides the mouse pointer/cursor after scrolling.
+Scroll the page to hide the mouse pointer.
 
-The pointer is shown again after moving the mouse.
+Move the mouse or click/tap to show the mouse pointer again.
 
 ![](media/hide-after-scroll.gif)
 
