@@ -10,8 +10,8 @@
   },
   "private": true,
   "scripts": {
-    "lint": "prettier -l \"**/*.{js,json,yml,yaml,md}\" && eslint . && web-ext lint",
-    "lint:fix": "prettier --write \"**/*.{js,json,yml,yaml,md}\" && eslint . --fix && web-ext lint",
+    "lint": "prettier -c \"**/*.{js,json,yml,yaml,md}\" && eslint . && web-ext lint",
+    "lint:fix": "prettier -w \"**/*.{js,json,yml,yaml,md}\" && eslint . --fix && web-ext lint",
     "test": "npm run lint",
     "build": "web-ext build",
     "start": "web-ext run",
@@ -21,9 +21,12 @@
     "node": "22.11.0"
   },
   "devDependencies": {
-    "eslint": "7.11.0",
-    "eslint-config-prettier": "6.12.0",
-    "prettier": "2.1.2",
+    "@eslint/js": "9.15.0",
+    "eslint": "9.15.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "globals": "15.12.0",
+    "prettier": "3.3.3",
     "standard-version": "9.0.0",
     "web-ext": "5.2.0"
   }
