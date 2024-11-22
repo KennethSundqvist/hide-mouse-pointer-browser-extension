@@ -14,7 +14,8 @@
     "lint:fix": "prettier -w \"**/*.{js,json,yml,yaml,md}\" && eslint . --fix && web-ext lint",
     "test": "npm run lint",
     "build": "web-ext build",
-    "start": "web-ext run",
+    "run:firefox": "web-ext run -t firefox-desktop",
+    "run:chromium": "web-ext run -t chromium",
     "release": "standard-version -a --header=\"# Changelog\n\""
   },
   "volta": {
@@ -28,6 +29,6 @@
     "globals": "15.12.0",
     "prettier": "3.3.3",
     "standard-version": "9.0.0",
-    "web-ext": "5.2.0"
+    "web-ext": "8.3.0"
   }
 }
