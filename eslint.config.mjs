@@ -10,7 +10,7 @@ export default [
   {
     files: ["*.{js,mjs,cjs}"],
     languageOptions: {
-      globals: {...globals.node},
+      globals: { ...globals.node },
     },
   },
   /*
@@ -19,7 +19,7 @@ export default [
   {
     files: ["src/**/*.{js,mjs,cjs}"],
     languageOptions: {
-      globals: {...globals.browser},
+      globals: { ...globals.browser },
     },
   },
   // Include Prettier after all other rules so that it can override them.

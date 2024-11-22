@@ -1,5 +1,0 @@
-bracketSpacing: false
-# Less diff when adding/removing trailing item
-trailingComma: es5
-# Less diff when refactoring between one/many arguments
-arrowParens: always

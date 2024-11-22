@@ -25,7 +25,7 @@
     "PointerEvent" in window
       ? ["pointerdown", "pointermove"]
       : ["mousedown", "mousemove", "touchstart", "touchmove"];
-  const options = {capture: true, passive: true};
+  const options = { capture: true, passive: true };
 
   for (const event of hideEvents) {
     scrollEl.addEventListener(event, hideHandler, options);
