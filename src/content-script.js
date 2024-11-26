@@ -19,19 +19,15 @@
     styleEl.remove();
   }
 
-  const scrollEl = document.scrollingElement;
-  const hideEvents = ["scroll", "wheel"];
   const showEvents =
     "PointerEvent" in window
       ? ["pointerdown", "pointermove"]
       : ["mousedown", "mousemove", "touchstart", "touchmove"];
   const options = { capture: true, passive: true };
 
-  for (const event of hideEvents) {
-    scrollEl.addEventListener(event, hideHandler, options);
-  }
+  document.addEventListener("scroll", hideHandler, options);
 
   for (const event of showEvents) {
-    scrollEl.addEventListener(event, showHandler, options);
+    document.addEventListener(event, showHandler, options);
   }
 })();
