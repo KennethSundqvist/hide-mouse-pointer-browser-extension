@@ -2,10 +2,31 @@
   let hidden = false;
 
   const styleEl = document.createElement("style");
-  // Use some poop clowns to get a high selector specificity so we can override
-  // other selectors in case they also use !important.
-  const poopClowns = ":not(#💩🤡)".repeat(20);
-  styleEl.textContent = `${poopClowns} {cursor: none !important}`;
+  // Using ":not(#some-id)" with an ID that is unlikely to exist on a page will
+  // target every element on the page so we can override the cursor style for
+  // every element.
+  //
+  // And using a lot of them in the same selector will give it a high
+  // specificity so it will override other selectors in case they also use
+  // !important.
+  const selector =
+    ":not(#👋-hide-mouse-pointer-browser-extension)" +
+    ":not(#🪵🦫)" +
+    ":not(#🧀🐁)" +
+    ":not(#🪸🐠)" +
+    ":not(#🕸️🕷️)" +
+    ":not(#🥚🐓)" +
+    ":not(#🌼🐝)" +
+    ":not(#🍸🦐)" +
+    ":not(#🪺🦜)" +
+    ":not(#🩸🦇)" +
+    ":not(#💦🐬)" +
+    ":not(#🪱🦔)" +
+    ":not(#🔪🦀)" +
+    ":not(#⚽️🦭)" +
+    ":not(#🍌🐒)" +
+    ":not(#🍃🦥)";
+  styleEl.textContent = `${selector} {cursor: none !important}`;
 
   function hideHandler() {
     if (hidden) return;
