@@ -15,8 +15,7 @@
     "test": "npm run lint",
     "build": "web-ext build",
     "run:firefox": "web-ext run -t firefox-desktop",
-    "run:chromium": "web-ext run -t chromium",
-    "release": "standard-version -a --header=\"# Changelog\n\""
+    "run:chromium": "web-ext run -t chromium"
   },
   "volta": {
     "node": "22.11.0"
@@ -28,7 +27,6 @@
     "eslint-plugin-prettier": "5.2.1",
     "globals": "15.12.0",
     "prettier": "3.3.3",
-    "standard-version": "9.0.0",
     "web-ext": "8.3.0"
   }
 }
