@@ -16,7 +16,7 @@ Move the mouse or click/tap to show the mouse pointer again.
 
 ## Permissions required
 
-- **Access your data for all websites:** Used to detect when you scroll or move the mouse on a page, and to hide the pointer.
+- **Access your data for all websites:** Allows the extension to detect when you scroll the page or move your mouse on any page without you having to manually activate the extension for each page you visit.
 
 ## Privacy
 
