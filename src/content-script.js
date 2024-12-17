@@ -40,13 +40,21 @@
     styleEl.remove();
   }
 
+  // "wheel" event is required to hide the mouse when scrolling up on a page
+  // that is already at the top, because no scroll event is fired in that case.
+  // const hideEvents = ["scroll"];
+  const hideEvents = ["scroll", "wheel"];
+
   const showEvents =
     "PointerEvent" in window
       ? ["pointerdown", "pointermove"]
       : ["mousedown", "mousemove", "touchstart", "touchmove"];
+
   const options = { capture: true, passive: true };
 
-  document.addEventListener("scroll", hideHandler, options);
+  for (const event of hideEvents) {
+    document.addEventListener(event, hideHandler, options);
+  }
 
   for (const event of showEvents) {
     document.addEventListener(event, showHandler, options);
