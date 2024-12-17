@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.1](https://github.com/KennethSundqvist/hide-mouse-pointer-browser-extension/compare/v2.0.0...v2.0.1) (2024-12-17)
+
+- Fix hiding when scrolling up on a page already at the top
+
 ## [2.0.0](https://github.com/KennethSundqvist/hide-mouse-pointer-browser-extension/compare/v1.1.1...v2.0.0) (2024-11-27)
 
 - (**Breaking**) Update to Manifest V3

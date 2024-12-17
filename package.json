@@ -1,6 +1,6 @@
 {
   "name": "hide-mouse-pointer-browser-extension",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Hides the mouse pointer/cursor after scrolling.",
   "author": "Kenneth Sundqvist <kenneth@kesu.se> (kesu.se)",
   "license": "MIT",
